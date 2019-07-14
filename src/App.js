@@ -11,13 +11,19 @@ class App extends Component {
     ]
   }
 
+  addNinja = (newNinja) => {
+    console.log(newNinja)
+
+  }
+
+
   render() {
     return (
       <div className="App" >
         <h1> My first React app!</h1>
         <p>Welcome :)</p>
         <Ninjas ninjas={this.state.ninjas} />
-        <AddNinja />
+        <AddNinja addNinja={this.addNinja} />
       </div>)
   }
 }
